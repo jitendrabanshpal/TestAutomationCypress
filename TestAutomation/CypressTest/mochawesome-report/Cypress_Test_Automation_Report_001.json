@@ -1,0 +1,115 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2019-01-28T14:59:18.818Z",
+    "end": "2019-01-28T14:59:25.835Z",
+    "duration": 7017,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "passPercentClass": "success",
+    "pendingPercentClass": "danger"
+  },
+  "suites": {
+    "uuid": "e28d08a6-75ba-49b3-8028-ef2c2b01bc72",
+    "title": "",
+    "fullFile": "",
+    "file": "",
+    "beforeHooks": [],
+    "afterHooks": [],
+    "tests": [],
+    "suites": [
+      {
+        "uuid": "d6d25e24-148c-4a3a-96c6-b8975833d150",
+        "title": "Flight booking Page",
+        "fullFile": "",
+        "file": "",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "Successfully Load Flight Page",
+            "fullTitle": "Flight booking Page Successfully Load Flight Page",
+            "duration": 1668,
+            "state": "passed",
+            "speed": "slow",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "cy.visit(Cypress.env('baseUrl'));\ncy.log('Successfully load the flight home page!!!');",
+            "err": {},
+            "isRoot": false,
+            "uuid": "407c8d12-b4e8-4614-a37a-367440bb6044",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "407c8d12-b4e8-4614-a37a-367440bb6044"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 1668,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      },
+      {
+        "uuid": "55fd1a3c-eeb9-4de8-bdfa-f413621c2feb",
+        "title": "Navigate to Register Page",
+        "fullFile": "",
+        "file": "",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "Visit Register Page",
+            "fullTitle": "Navigate to Register Page Visit Register Page",
+            "duration": 2855,
+            "state": "passed",
+            "speed": "slow",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "cy.contains('REGISTER').click();\ncy.title().should('eq', 'Register: Mercury Tours');\ncy.log('Successfully load the Register page!!!');\ncy.screenshot();\ncy.get(':nth-child(2) > :nth-child(2) > input').type(userID_Alpha());",
+            "err": {},
+            "isRoot": false,
+            "uuid": "7b2b78b1-17a2-4c60-b2a1-3368ea527c94",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "7b2b78b1-17a2-4c60-b2a1-3368ea527c94"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 2855,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      }
+    ],
+    "passes": [],
+    "failures": [],
+    "pending": [],
+    "skipped": [],
+    "duration": 0,
+    "root": true,
+    "rootEmpty": true,
+    "_timeout": 2000
+  },
+  "copyrightYear": 2019
+}

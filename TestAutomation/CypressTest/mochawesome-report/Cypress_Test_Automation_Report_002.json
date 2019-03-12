@@ -1,0 +1,152 @@
+{
+  "stats": {
+    "suites": 3,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2019-01-28T14:59:30.360Z",
+    "end": "2019-01-28T14:59:46.470Z",
+    "duration": 16110,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "passPercentClass": "success",
+    "pendingPercentClass": "danger"
+  },
+  "suites": {
+    "uuid": "afff9a7e-d082-432e-ad97-b40558c05c4b",
+    "title": "",
+    "fullFile": "",
+    "file": "",
+    "beforeHooks": [],
+    "afterHooks": [],
+    "tests": [],
+    "suites": [
+      {
+        "uuid": "08994807-0233-4d46-bacb-07d3a7a18046",
+        "title": "The Home Page",
+        "fullFile": "",
+        "file": "",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "successfully loads",
+            "fullTitle": "The Home Page successfully loads",
+            "duration": 4820,
+            "state": "passed",
+            "speed": "slow",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "// cy.visit('http://localhost:8081') // change URL to match your dev URL\ncy.visit(Cypress.env('loginUrl')); // cy.visit('http://blazedemo.com/vacation.html')\ncy.get('[name=\"fromPort\"]').select('Boston');\ncy.get('[name=\"toPort\"]').select('London'); //cy.get('form > .container > .btn').click()\ncy.contains('Find Flights').click();\ncy.wait(2000);\ncy.get('h3').contains('Flights from Boston to London:');\ncy.log('Navigate to Reservation Page Successfully !!!');\ncy.title().should('eq', 'BlazeDemo - reserve');\ncy.screenshot();",
+            "err": {},
+            "isRoot": false,
+            "uuid": "c54d8a50-6cd6-4b70-abbf-25b65ed40720",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "c54d8a50-6cd6-4b70-abbf-25b65ed40720"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 4820,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      },
+      {
+        "uuid": "8ef179cc-4c82-4616-b2b0-e7d8205a169f",
+        "title": "The Reservation Page",
+        "fullFile": "",
+        "file": "",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "successfully loads",
+            "fullTitle": "The Reservation Page successfully loads",
+            "duration": 3189,
+            "state": "passed",
+            "speed": "slow",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "// cy.get('[value=Choose This Flight]').eq(1).click()\t\ncy.contains('Choose This Flight').eq(0).click();\ncy.wait(2000); // cy.get(':nth-child(1) > :nth-child(2) > .btn').click()\ncy.title().should('eq', 'BlazeDemo Purchase');\ncy.get('h2').contains('Your flight from Boston to London has been reserved.');",
+            "err": {},
+            "isRoot": false,
+            "uuid": "881781ba-bfdd-4c7b-b40c-103f2a3b9671",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "881781ba-bfdd-4c7b-b40c-103f2a3b9671"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 3189,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      },
+      {
+        "uuid": "77cd28c9-32bb-4c28-a6de-d4711d1453e8",
+        "title": "The Purchase Page",
+        "fullFile": "",
+        "file": "",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "successfully loads",
+            "fullTitle": "The Purchase Page successfully loads",
+            "duration": 5108,
+            "state": "passed",
+            "speed": "slow",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "cy.log('Please provide all mandatory field !!!');\ncy.get('#inputName').type('Kajal');\ncy.get('#address').type('123 Manor Mills');\ncy.get('#city').type('Leeds');\ncy.get('#state').type('West Yorkshire');\ncy.get('#zipCode').type('Ls14JL');\ncy.get('#cardType').select('Visa');\ncy.get('#creditCardNumber').type('1110212031304144');\ncy.get('#creditCardMonth').clear();\ncy.get('#creditCardMonth').type('10');\ncy.get('#creditCardYear').clear();\ncy.get('#creditCardYear').type('2019');\ncy.get('#nameOnCard').type('Kajal Kundu'); //cy.get('.controls > .btn').click()\ncy.contains('Purchase Flight').click();\ncy.wait(2000);\ncy.get('h1').contains('Thank you for your purchase today!');\ncy.title().should('eq', 'BlazeDemo Confirmation');",
+            "err": {},
+            "isRoot": false,
+            "uuid": "b4685ef4-3f5e-4026-8a3b-6b85fb435b7e",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "b4685ef4-3f5e-4026-8a3b-6b85fb435b7e"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 5108,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      }
+    ],
+    "passes": [],
+    "failures": [],
+    "pending": [],
+    "skipped": [],
+    "duration": 0,
+    "root": true,
+    "rootEmpty": true,
+    "_timeout": 2000
+  },
+  "copyrightYear": 2019
+}

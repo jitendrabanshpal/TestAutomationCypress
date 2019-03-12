@@ -1,0 +1,50 @@
+describe('The Home Page', function() {
+  it('successfully loads', function() {
+   // cy.visit('http://localhost:8081') // change URL to match your dev URL
+      cy.visit(Cypress.env('loginUrl'))
+     // cy.visit('http://blazedemo.com/vacation.html')
+      cy.get('[name="fromPort"]').select('Boston')
+      cy.get('[name="toPort"]').select('London')
+      //cy.get('form > .container > .btn').click()
+      cy.contains('Find Flights').click()
+      cy.wait(2000)
+      cy.get('h3').contains('Flights from Boston to London:')
+      cy.log('Navigate to Reservation Page Successfully !!!')
+      cy.title().should('eq','BlazeDemo - reserve')
+      cy.screenshot()
+     
+  })
+})
+describe('The Reservation Page', function() {
+     it('successfully loads', function() {
+   // cy.get('[value=Choose This Flight]').eq(1).click()	
+    cy.contains('Choose This Flight').eq(0).click()
+    cy.wait(2000)
+   // cy.get(':nth-child(1) > :nth-child(2) > .btn').click()
+    cy.title().should('eq','BlazeDemo Purchase')
+    cy.get('h2').contains('Your flight from Boston to London has been reserved.')
+ })   
+})
+
+describe('The Purchase Page', function() {
+     it('successfully loads', function() {
+    cy.log('Please provide all mandatory field !!!')
+    cy.get('#inputName').type('Kajal')
+    cy.get('#address').type('123 Manor Mills')
+    cy.get('#city').type('Leeds')
+    cy.get('#state').type('West Yorkshire')
+    cy.get('#zipCode').type('Ls14JL')
+    cy.get('#cardType').select('Visa')
+    cy.get('#creditCardNumber').type('1110212031304144')
+    cy.get('#creditCardMonth').clear()
+    cy.get('#creditCardMonth').type('10')
+    cy.get('#creditCardYear').clear()
+    cy.get('#creditCardYear').type('2019')
+    cy.get('#nameOnCard').type('Kajal Kundu')
+    //cy.get('.controls > .btn').click()
+    cy.contains('Purchase Flight').click()
+    cy.wait(2000)
+    cy.get('h1').contains('Thank you for your purchase today!')
+    cy.title().should('eq','BlazeDemo Confirmation')
+ })   
+})

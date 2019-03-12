@@ -1,0 +1,7 @@
+{
+    "env": {
+        "baseUrl": "http://newtours.demoaut.com/",        
+        "loginUrl": "http://blazedemo.com/"
+        
+      }
+}

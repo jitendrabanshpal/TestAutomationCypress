@@ -1,0 +1,263 @@
+{
+  "stats": {
+    "suites": 6,
+    "tests": 6,
+    "passes": 6,
+    "pending": 0,
+    "failures": 0,
+    "start": "2019-01-28T14:58:53.472Z",
+    "end": "2019-01-28T14:59:10.170Z",
+    "duration": 16698,
+    "testsRegistered": 6,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "passPercentClass": "success",
+    "pendingPercentClass": "danger"
+  },
+  "suites": {
+    "uuid": "d7456b6c-d0e7-4207-85ae-914a3c0ca863",
+    "title": "",
+    "fullFile": "",
+    "file": "",
+    "beforeHooks": [],
+    "afterHooks": [],
+    "tests": [],
+    "suites": [
+      {
+        "uuid": "b3f10ecc-1b5c-42c5-802a-9093b392fac5",
+        "title": "Flight booking Page",
+        "fullFile": "",
+        "file": "",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "Successfully Load Flight Page",
+            "fullTitle": "Flight booking Page Successfully Load Flight Page",
+            "duration": 1929,
+            "state": "passed",
+            "speed": "slow",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "cy.visit(Cypress.env('baseUrl'));\ncy.log('Successfully load the flight home page!!!');",
+            "err": {},
+            "isRoot": false,
+            "uuid": "0fccae20-0913-41eb-b797-afac48e9f57d",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "0fccae20-0913-41eb-b797-afac48e9f57d"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 1929,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      },
+      {
+        "uuid": "0fb383ac-0313-4f85-bd18-7cd9c3f7b5bd",
+        "title": "Navigate to Home Page",
+        "fullFile": "",
+        "file": "",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "Visit Home Page",
+            "fullTitle": "Navigate to Home Page Visit Home Page",
+            "duration": 3324,
+            "state": "passed",
+            "speed": "slow",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "cy.contains('Home').click();\ncy.title().should('eq', 'Welcome: Mercury Tours');\ncy.log('Successfully load the Home page!!!');\ncy.screenshot();",
+            "err": {},
+            "isRoot": false,
+            "uuid": "58b5625c-39b2-496b-915d-eba9d59712c1",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "58b5625c-39b2-496b-915d-eba9d59712c1"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 3324,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      },
+      {
+        "uuid": "825a6ccb-aa98-462f-bf27-2447ba7bc3de",
+        "title": "Navigate to Hotels Page",
+        "fullFile": "",
+        "file": "",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "Visit Hotels Page",
+            "fullTitle": "Navigate to Hotels Page Visit Hotels Page",
+            "duration": 1604,
+            "state": "passed",
+            "speed": "slow",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "cy.contains('Hotels').click();\ncy.title().should('eq', 'Under Construction: Mercury Tours');\ncy.get('p > :nth-child(1) > :nth-child(1) > :nth-child(1)').contains('This section of our web site is currently under construction.');\ncy.log('Successfully load the Hotels page!!!');\ncy.screenshot();",
+            "err": {},
+            "isRoot": false,
+            "uuid": "76566326-ec32-4695-b28f-030feefa6cf5",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "76566326-ec32-4695-b28f-030feefa6cf5"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 1604,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      },
+      {
+        "uuid": "b2cb9eac-ea9e-401e-a756-cfbd6b541f19",
+        "title": "Navigate to Cruises Page",
+        "fullFile": "",
+        "file": "",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "Visit Cruises Page",
+            "fullTitle": "Navigate to Cruises Page Visit Cruises Page",
+            "duration": 2688,
+            "state": "passed",
+            "speed": "slow",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "cy.contains('Cruises').click();\ncy.title().should('eq', 'Cruises: Mercury Tours');\ncy.log('Successfully load the Cruises page!!!');\ncy.screenshot();",
+            "err": {},
+            "isRoot": false,
+            "uuid": "015a4e51-ad79-4cf2-9c1b-e7161bcfc6a2",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "015a4e51-ad79-4cf2-9c1b-e7161bcfc6a2"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 2688,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      },
+      {
+        "uuid": "ca0637fd-414f-4acb-8c6f-0029f3c0b675",
+        "title": "Navigate to Register Page",
+        "fullFile": "",
+        "file": "",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "Visit Register Page",
+            "fullTitle": "Navigate to Register Page Visit Register Page",
+            "duration": 2399,
+            "state": "passed",
+            "speed": "slow",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "cy.contains('REGISTER').click();\ncy.title().should('eq', 'Register: Mercury Tours');\ncy.log('Successfully load the Register page!!!');\ncy.screenshot();",
+            "err": {},
+            "isRoot": false,
+            "uuid": "e2e61371-d669-4346-81c1-826e4f584fab",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "e2e61371-d669-4346-81c1-826e4f584fab"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 2399,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      },
+      {
+        "uuid": "5b850b6a-23a5-4832-92cc-2023bc267bee",
+        "title": "Navigate to Sign-on Page",
+        "fullFile": "",
+        "file": "",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "Visit Sign-on Page",
+            "fullTitle": "Navigate to Sign-on Page Visit Sign-on Page",
+            "duration": 1502,
+            "state": "passed",
+            "speed": "slow",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "cy.contains('SIGN-ON').click();\ncy.title().should('eq', 'Sign-on: Mercury Tours');\ncy.log('Successfully load the SIGN-ON page!!!');\ncy.screenshot();",
+            "err": {},
+            "isRoot": false,
+            "uuid": "5b25cd67-7dfb-45dc-a13c-1154588fb49f",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "5b25cd67-7dfb-45dc-a13c-1154588fb49f"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 1502,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      }
+    ],
+    "passes": [],
+    "failures": [],
+    "pending": [],
+    "skipped": [],
+    "duration": 0,
+    "root": true,
+    "rootEmpty": true,
+    "_timeout": 2000
+  },
+  "copyrightYear": 2019
+}
